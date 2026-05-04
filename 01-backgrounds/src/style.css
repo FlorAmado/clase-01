@@ -1,0 +1,48 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    /* Tipografía segura -> Todos los So van a tener alguna de estas tipografias */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+    max-width: 900px;
+    border: 1px solid crimson;
+    margin: auto;
+}
+
+.texto-rojo{
+    color: crimson;
+}
+
+.fondo-base{
+    background-color: blue;
+    width: auto;
+    height: 350px;
+    background-repeat: no-repeat;
+}
+
+.fondo-color{
+  background-color: darkorange;
+
+}
+
+.fondo-degradado{
+  background-image: linear-gradient(to right,darkorange, rgb(177, 1, 147));
+}
+
+.fondo-degradado-2{
+  background-image: linear-gradient(to left, rgb(255, 196, 0), rgb(255, 136, 0),rgb(255, 45, 80));
+}
+.fondo-degradado-3{
+  background-image: linear-gradient(to bottom, rgb(0, 255, 213), rgb(0, 255, 98),rgb(21, 180, 0));
+}
+.fondo-degradado-4{
+  background-image: linear-gradient(to left bottom, rgb(0, 255, 213), rgb(0, 255, 98),rgb(21, 180, 0));
+}
