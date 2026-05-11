@@ -1,0 +1,131 @@
+/* selector */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* selector de etiqueta */
+body{
+  background-color: #ddd;
+}
+
+h2{
+  color: deeppink;
+}
+
+/* selector de clase (.) */
+.borde{
+  border: 2px solid blueviolet;
+}
+
+/* selector de id */
+
+#seccion{
+  background-color: #ba92e0;
+  border: 2px solid #ffc0cb;
+}
+
+[href]{
+  text-decoration: none; /* pierde el subrayado */
+  
+}
+[href="https://google.com.ar"]{
+  text-decoration: none; /* pierde el subrayado */
+  color: darkred;
+}
+
+[class]{
+  background-color: yellow;
+}
+
+/* seleccionar todos los elementos que comiencen con el valor del atributo href en https */
+[href^="https"]{
+  background-color: olive;
+}
+
+/* Seleccionar todos los elementos que terminan en href en 5173 */
+
+[href$="5173"]{
+  color: darksalmon;
+  background-color: black;
+}
+
+/* Selecionar todos los elementos que tengan dentro del href las palabra .com.ar */
+
+[href*=".com.ar"] {
+    color: darkorange;
+}
+
+h3{
+  background-color: black;
+  color: white;
+}
+
+/* Permite selccionar todo los elementos que son directamente hijos de otro elemento */
+
+p > strong{
+  color: green;
+}
+
+section#importante.seccion-roja > article{
+  background-color: white;
+  width: 80%;
+  height: 100px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+section#importante.seccion-roja > article.destacado{
+  background-color: lightblue;
+}
+
+/*! selector de hermanos adyacentes */
+/* permite seleccionar unicamente elementos que siguen del primer elemento */
+
+p + span{
+  font-weight: bolder;
+  color: darkgreen;
+}
+
+span + h5{
+  color: palevioletred;
+}
+
+span + h5{
+  color: blue;
+}
+
+/* ! selctor de hermano general */
+/*  permite seleccionar todos los elementos que siguen despues del primer elemento */
+
+/*  alt + 126 -> virgrgulilla ~ */
+
+p.parrafito ~ h5{
+  color: orange;
+
+}
+
+/* ! selccionar de hijo */
+
+/* permite selccionar a lkos hijos que etsan dentro del padre */
+
+div h6{
+  color: darkmagenta;
+  
+}
+
+/*
+tag    0001
+.class 0010
+#id    0100
+inline 1000
+*/
+
+
+
+
+
+
+
+
