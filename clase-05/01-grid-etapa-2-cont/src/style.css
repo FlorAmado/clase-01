@@ -25,21 +25,42 @@ body {
 
     background-color: mediumseagreen;
     /* ! manejo horizontal */
-    justify-content: start; /* start (default) */
+    justify-content: start; /* start (default) | end | center | space-between | space-around | space-evenly */
     /* ! manejo horizontal de la celda */
-    justify-items: start;
+    justify-items: stretch; /* strech (default) | start | end | center */
 
     /* ! manejo vertical */
-    align-content: start; /* start (default) */
+    align-content: start; /* start (default) | end | center | space-between | space-around | space-evenly */ 
     /* ! manejo vertical de la celda */
-    align-items: start;
+    align-items: stretch; /* strech  (default) | start | end | center */
 
     height: 43.75rem;
 }
 
 .elemento {
     background-color: mediumorchid;
-   /*  width: 5rem;
-    height: 5rem; */
+    width: 5rem;
+    height: 5rem;
 }
 
+.elm1 {
+    justify-self: start; /* start (default) */
+}
+
+.elm2 {
+    justify-self: end; /* horizontalmente */
+}
+
+.elm3 {
+    justify-self: center; /* horizontalmente */
+}
+
+.elm4 {
+    justify-self: center; /* horizontalmente */
+    align-self: center; /* verticalmente */
+}
+
+.elm5 {
+    justify-self: end; /* horizontalmente */
+    align-self: end;  /* verticalmente */
+}
